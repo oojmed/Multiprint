@@ -1,6 +1,11 @@
 var ffTests = {
+  "userAgentDoesNotContainChrome": !navigator.userAgent.includes('Chrome'),
+  "userAgentDoesNotContainKHTML": !navigator.userAgent.includes('KHTML'),
+  "userAgentDoesNotContainLikeGecko": !navigator.userAgent.includes('like Gecko'),
+  "userAgentDoesNotContainWebKit": !navigator.userAgent.includes('WebKit'),
+  "userAgentDoesNotContainSafari": !navigator.userAgent.includes('Safari'),
   "userAgentContainsFirefox": navigator.userAgent.includes('Firefox'),
-  "userAgentContainsGecko": navigator.userAgent.includes('Gecko'),
+  "userAgentContainsGeckoSlash": navigator.userAgent.includes('Gecko/'),
   "userAgentContainsMozilla": navigator.userAgent.includes('Mozilla'),
   "appCodeNameEqualsMozilla": navigator.appCodeName === "Mozilla",
   "appNameEqualsNetscape": navigator.appName === "Netscape",
@@ -14,7 +19,7 @@ var allPassed = true;
 for (var i = 0; i < ffTestsKeys.length; i++) {
   var color = ffTests[ffTestsKeys[i]] ? 'lightgreen' : 'red';
 
-  write('UA-firefox', '<span class="var">' + ffTestsKeys[i] + '</span> = <span style="color: ' + color + '">' + ffTests[ffTestsKeys[i]] + '</span>');
+  write('UA-firefox', '<span class="var">' + ffTestsKeys[i] + '</span> = <span style="color: ' + color + '">' + ffTests[ffTestsKeys[i]] + '</span>', i + 1, ffTestsKeys.length);
 
   if (!ffTests[ffTestsKeys[i]]) { allPassed = false; }
 }

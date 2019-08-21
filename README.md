@@ -20,5 +20,17 @@ Primarily used for debugging / identifying navigator variables. Doesn't detect a
 ## UA-firefox
 Guesses whether the browser is Firefox from the user agent string
 
-## UA-chrome
-Guesses whether the browser is Chrome from the user agent string
+## UA-chromium
+Guesses whether the browser is Chromium-based from the user agent string
+
+## UA-chromium-mobile
+Guesses whether the browser is Chromium-based Mobile from the user agent string
+
+## UA-opera
+Guesses whether the browser is Opera from the user agent string
+
+## js-load-status
+Detects Chromium-based desktop browsers or Android WebView based on whether the browser loads a JS file returned with a 100 HTTP status code
+
+## opera-local-exploit
+Makes an iframe with `src="opera://about"`, for some reason, unlike most Chromium-based browsers, Opera doesn't block it's own protocol / local files, detects whether it worked / load via setting `onload`

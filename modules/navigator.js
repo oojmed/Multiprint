@@ -1,4 +1,4 @@
-write('navigator', 'Displaying <span class="var">navigator</span> variables');
+write('navigator', 'Displaying <span class="var">navigator</span> variables', 1, 1);
 
 var navVars = {
   'appCodeName': navigator.appCodeName,
