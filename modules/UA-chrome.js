@@ -10,6 +10,8 @@ var gcTests = {
   "vendorEqualsGoogleInc": navigator.vendor === "Google Inc."
 };
 
+window.gcTests = gcTests;
+
 var gcTestsKeys = Object.keys(gcTests);
 
 var allPassed = true;
