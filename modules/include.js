@@ -13,7 +13,7 @@ function write(who, msg, status, outof) {
 
 if (!String.prototype.includes) { String.prototype.includes = function(search, start) { 'use strict'; if (typeof start !== 'number') { start = 0; } if (start + search.length > this.length) { return false; } else { return this.indexOf(search, start) !== -1; } }; }
 
-write('include', 'Web-Multiprint v0.2.0-Dev');
+write('include', 'Multiprint v1.0.0');
 write('include', 'Made By Oojmed');
 write('include', '---------------------------');
 
@@ -21,14 +21,18 @@ write('include', 'Loading modules');
 
 var modules = {
   'navigator': true,
-  'operaAB': true,
+  'opera-adblock': true,
   'easylist': true,
+  'ublock': true,
   'UA-firefox': true,
   'UA-chromium': true,
   'UA-opera': true,
   'UA-chromium-mobile': true,
-  'js-load-status': true,
-  'opera-local-exploit': true
+  'status-chromium': true,
+  'status-firefox': true,
+  'opera-local-exploit': true,
+  'brave-shields': true,
+  'chrome-js-class': true
 };
 
 var keys = Object.keys(modules);
@@ -58,12 +62,5 @@ for (var i = 0; i < keys.length; i++) {
     document.body.appendChild(script);
   }
 }
-
-/*for (var i = 0; i < 600; i++) {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'status.php?s=' + i;
-  document.body.appendChild(script);
-}*/
 
 write('include', '---------------------------');

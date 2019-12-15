@@ -124,7 +124,7 @@ function elTest1() {
 
   window.easylist_1_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest2() {
@@ -135,7 +135,7 @@ function elTest2() {
 
   window.easylist_2_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest3() {
@@ -146,7 +146,7 @@ function elTest3() {
 
   window.easylist_3_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest4() {
@@ -157,7 +157,7 @@ function elTest4() {
 
   window.easylist_4_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest5() {
@@ -168,7 +168,7 @@ function elTest5() {
 
   window.easylist_5_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest6() {
@@ -179,7 +179,7 @@ function elTest6() {
 
   window.easylist_6_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest7() {
@@ -190,7 +190,7 @@ function elTest7() {
 
   window.easylist_7_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest8() {
@@ -201,7 +201,7 @@ function elTest8() {
 
   window.easylist_8_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest9() {
@@ -212,7 +212,7 @@ function elTest9() {
 
   window.easylist_9_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elTest10() {
@@ -223,10 +223,10 @@ function elTest10() {
 
   window.easylist_10_done = true;
 
-  if (window.easylist_1_done && window.easylist_2_done && window.easylist_3_done && window.easylist_4_done && window.easylist_5_done && window.easylist_6_done && window.easylist_7_done && window.easylist_8_done && window.easylist_9_done && window.easylist_10_done) { elFinal(); }
+  if (window.easylist_test_count === 10) { elFinal(); }
 }
 
 function elFinal() {
-  var final = window.easylist_1 && window.easylist_2 && window.easylist_3 && window.easylist_4 && window.easylist_5 && window.easylist_6 && window.easylist_7 && window.easylist_8 && window.easylist_9 && window.easylist_10 ? '<span style="color: red;">Easylist Adblocking List is installed <span class="var">(all tests were blocked)</span></span>' : '<span style="color: lightgreen;">Easylist Adblocking List is not installed<span class="var"> (not all tests were blocked)</span></span>';
+  var final = window.easylist_1 && window.easylist_2 && window.easylist_3 && window.easylist_4 && window.easylist_5 && window.easylist_6 && window.easylist_7 && window.easylist_8 && window.easylist_9 && window.easylist_10 ? '<span style="color: lightgreen;">Easylist Adblocking List is installed <span class="var">(all tests were blocked)</span></span>' : '<span style="color: red;">Easylist Adblocking List is not installed<span class="var"> (not all tests were blocked)</span></span>';
   write('easylist', final);
 }

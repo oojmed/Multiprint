@@ -1,4 +1,5 @@
-# Web-Multiprint Changelog
+# Multiprint Changelog
+
 ## v0.2.0
 ### New Modules
 - UA-opera
