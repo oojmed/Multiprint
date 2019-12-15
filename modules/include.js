@@ -32,7 +32,8 @@ var modules = {
   'status-firefox': true,
   'opera-local-exploit': true,
   'brave-shields': true,
-  'chrome-js-class': true
+  'chrome-js-class': true,
+  'notif-before': true
 };
 
 var keys = Object.keys(modules);
