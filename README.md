@@ -1,4 +1,4 @@
-# Web-Multiprint
+# Multiprint
 ### A webapp that fingerprints / guesses / works out what you use.
 
 # Technology
